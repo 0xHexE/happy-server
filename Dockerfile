@@ -17,6 +17,7 @@ RUN yarn install --frozen-lockfile --ignore-engines
 COPY ./tsconfig.json ./tsconfig.json
 COPY ./vitest.config.ts ./vitest.config.ts
 COPY ./sources ./sources
+COPY ./prisma ./prisma
 
 # Build the Next.js application
 RUN yarn build
